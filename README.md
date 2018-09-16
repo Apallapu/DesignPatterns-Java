@@ -1,1 +1,1 @@
-# DesignPatterns-Java
+# Java-design-patterns 
