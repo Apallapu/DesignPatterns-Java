@@ -1,9 +1,9 @@
 package com.ankamma.designpatterns.factory;
 
-import com.ankamma.designpatterns.product.EnglishMovie;
-import com.ankamma.designpatterns.product.HindiMovie;
-import com.ankamma.designpatterns.product.TeluguMovie;
-import com.ankamma.designpatterns.product.MovieInfo;
+import com.ankamma.designpatterns.movie.EnglishMovie;
+import com.ankamma.designpatterns.movie.HindiMovie;
+import com.ankamma.designpatterns.movie.MovieInfo;
+import com.ankamma.designpatterns.movie.TeluguMovie;
 
 public class MovieFactory {
 

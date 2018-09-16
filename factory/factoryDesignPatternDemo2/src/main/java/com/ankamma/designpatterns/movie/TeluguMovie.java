@@ -1,11 +1,11 @@
-package com.ankamma.designpatterns.product;
+package com.ankamma.designpatterns.movie;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import com.ankamma.designpatterns.model.MovieRequest;
 
-public class EnglishMovie implements MovieInfo {
+public class TeluguMovie implements MovieInfo {
 
 	public List<MovieRequest> getMoviesByLanguage(String language) {
 
@@ -13,14 +13,14 @@ public class EnglishMovie implements MovieInfo {
 
 		MovieRequest movieRequest = new MovieRequest();
 		movieRequest.setLanguage(language);
-		movieRequest.setMovieId(12l);
-		movieRequest.setMovieName("Avatar");
+		movieRequest.setMovieId(21l);
+		movieRequest.setMovieName("Bahubali");
 		movieRequest.setMovieTicketPrize(150.00);
 
 		MovieRequest movieRequest2 = new MovieRequest();
 		movieRequest2.setLanguage(language);
-		movieRequest2.setMovieId(13l);
-		movieRequest2.setMovieName("Titanic,");
+		movieRequest2.setMovieId(16l);
+		movieRequest2.setMovieName("Bahubali-2");
 		movieRequest2.setMovieTicketPrize(150.00);
 		movieRequests.add(movieRequest);
 		movieRequests.add(movieRequest2);

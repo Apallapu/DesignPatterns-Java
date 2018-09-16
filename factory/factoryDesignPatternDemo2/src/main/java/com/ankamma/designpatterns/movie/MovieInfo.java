@@ -1,4 +1,4 @@
-package com.ankamma.designpatterns.product;
+package com.ankamma.designpatterns.movie;
 
 import java.util.List;
 

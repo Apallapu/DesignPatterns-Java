@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.ankamma.designpatterns.factory.MovieFactory;
 import com.ankamma.designpatterns.model.MovieRequest;
-import com.ankamma.designpatterns.product.MovieInfo;
+import com.ankamma.designpatterns.movie.MovieInfo;
 
 /**
  * Hello world!
