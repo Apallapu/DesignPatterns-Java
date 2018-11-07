@@ -21,7 +21,7 @@ package com.test.singleton.dao;
 public class AccountDaoSingleton {
 
 	/** The instacce. */
-	private volatile static AccountDaoSingleton instacce;
+	private static volatile AccountDaoSingleton instacce;
 
 	/**
 	 * Instantiates a new account dao singleton.
@@ -38,7 +38,9 @@ public class AccountDaoSingleton {
 	public static AccountDaoSingleton getInstance() {
 		if (instacce == null) {
 			synchronized (AccountDaoSingleton.class) {
-				instacce = new AccountDaoSingleton();
+				if (instacce == null) {
+					instacce = new AccountDaoSingleton();
+				}
 			}
 		}
 		return instacce;
