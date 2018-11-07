@@ -1,9 +1,7 @@
 package com.test.singleton;
 
-import java.io.Serializable;
-
-public class SingletonBreakingWithReflection implements Serializable {
-	private static final long serialVersionUID = 3119105548371608200L;
+public class SingletonBreakingWithReflection {
+	
 	private static final SingletonBreakingWithReflection singleton = new SingletonBreakingWithReflection();
 
 	private SingletonBreakingWithReflection() {
@@ -14,20 +12,11 @@ public class SingletonBreakingWithReflection implements Serializable {
 		return singleton;
 	}
 
-	@Override
-	protected Object clone() throws CloneNotSupportedException {
-		throw new CloneNotSupportedException("Singleton object can't be clone");
-	}
-
-	protected Object readResolve() {
-		return singleton;
-	}
-
 	public static void main(String[] args) {
 
 		try {
 			Class<SingletonBreakingWithReflection> singletonClass = (Class<SingletonBreakingWithReflection>) Class
-					.forName("com.single.test.SingletonWithReflectionFail");
+					.forName("com.test.singleton.SingletonBreakingWithReflection");
 			SingletonBreakingWithReflection singletonReflectionOne = singletonClass.newInstance();
 			System.out.println("singletonReflectionOne:::" + singletonReflectionOne.hashCode());
 			SingletonBreakingWithReflection singletonReflectionTwo = singletonClass.newInstance();
